@@ -17,3 +17,7 @@ $("#hour-14 .description").val(localStorage.getItem("hour-9"))
 $("#hour-15 .description").val(localStorage.getItem("hour-9"))
 $("#hour-16 .description").val(localStorage.getItem("hour-9"))
 $("#hour-17 .description").val(localStorage.getItem("hour-9"))
+
+//Getting the current day and displaying on page
+var currentDay = document.getElementById("currentDay");
+currentDay.innerHTML = moment().format('dddd, MMMM, Do');
